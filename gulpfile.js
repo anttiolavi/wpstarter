@@ -16,7 +16,8 @@ var gulp = require('gulp'),
 
   options = require('./config'),
   sourcePath = options.sourcePath,
-  outputPath = options.outputPath,
+  templateOutputPath = options.templateOutputPath,
+  assetOutputPath = options.assetOutputPath,
   sassOptions = options.sass,
   processors = [
     autoprefixer({
@@ -68,14 +69,14 @@ gulp.task('build:js', ['jscs'], function() {
 });
 
 gulp.task('build:css', function() {
-  return gulp.src(sourcePath + '/**/*.scss')
+  return gulp.src(sourcePath + '/*.scss')
     .pipe(cssglobbing({
       extensions: ['.css', '.scss']
     }))
     .pipe(sass(sassOptions))
     .pipe(postcss(processors))
     .pipe(gulpif(isProd, csso()))
-    .pipe(gulp.dest(assetOutputPath + '/css'));
+    .pipe(gulp.dest('.'));
 });
 
 gulp.task('watch', ['build:all'], function() {

@@ -1,12 +1,12 @@
 {
-  "name": "WP starter",
+  "name": "WPStarter",
   "version": "0.1.0",
   "authors": [
     "Antti Salo"
   ],
   "description": "WP starter",
   "keywords": [
-    "wordpress"
+    "wordpress",
     "bem",
     "sass",
     "gulp"
