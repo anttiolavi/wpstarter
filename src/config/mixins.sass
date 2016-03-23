@@ -1,0 +1,21 @@
+@mixin reset-input()
+	border-radius: none
+  border: none
+  box-shadow: none
+
+@mixin breakpoint($size)
+  @media (min-width: $size)
+    @content
+
+@mixin placeholderColor($element, $color)
+	#{$element}::-webkit-input-placeholder
+		color: $color
+
+	#{$element}:-moz-placeholder /* Firefox 18- */
+		color: $color
+
+	#{$element}::-moz-placeholder /* Firefox 19+ */
+		color: $color
+
+	#{$element}:-ms-input-placeholder
+		color: $color

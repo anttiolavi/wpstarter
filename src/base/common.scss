@@ -1,0 +1,40 @@
+//preload images
+body:after {
+  display: none
+  content: ''
+}
+
+body {
+  font-size: 16px
+  position: relative
+}
+
+ul,
+ol {
+  margin: 0
+  padding: 0
+  list-style: none
+}
+
+a {
+  text-decoration: none
+}
+
+h1 {
+  font-size: 2.25em
+  color: #fff
+}
+
+h2 {
+  font-size: 1.75em
+  color: #fff
+  text-transform: uppercase
+}
+
+h3 {
+  font-size: 1.5em
+}
+
+h4 {
+  font-size: 1.25em
+}

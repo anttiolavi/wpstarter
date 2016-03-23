@@ -1,0 +1,21 @@
+/*
+ Theme Name:     Flex Theme
+ Theme URI:
+ Description:
+ Author:         Antti Salo
+ Author URI:
+ Template:       HTML5-Reset-WordPress-Theme-master
+ Version:        1.0.0
+*/
+
+@import '../HTML5-Reset-WordPress-Theme-master/style.css'
+
+
+@import 'config/variables.scss'
+@import 'vendor/normalize-scss/normalize.scss'
+@import 'config/mixins.scss'
+
+@import 'base/common.scss'
+@import 'base/type.scss'
+
+@import 'src/**/*.scss'
